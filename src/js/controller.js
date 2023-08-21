@@ -134,6 +134,10 @@ const controlAddRecipe = async function (addRecipe) {
   // location.reload();
 };
 
+const newFeature = function () {
+  console.log('Welcome to the coding');
+};
+
 const init = function () {
   bookmarksView.addHandlerBookmarks(controlBookmarks);
   recipeView.addHandlerRender(controlRecipe);
@@ -142,7 +146,7 @@ const init = function () {
   paginationView.addHandlerClick(controlPagination);
   searchView.addHandlerSearch(controlSearchResults);
   addRecipeView.addHandlerUpload(controlAddRecipe);
-  console.log('Welcome :)');
+  newFeature();
 };
 init();
 
