@@ -1,5 +1,6 @@
 import { async } from 'regenerator-runtime';
-import { API_URL, TIMEOUT_SEC, RES_PER_PAGE, API_KEY } from './config.js';
+import { API_URL, TIMEOUT_SEC, RES_PER_PAGE } from './config.js';
+import { API_KEY } from './keys.js';
 import { timeout, AJAX } from './helpers.js';
 import addRecipeView from './views/addRecipeView.js';
 
