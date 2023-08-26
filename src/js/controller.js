@@ -12,12 +12,6 @@ import 'core-js/stable';
 // Polyfilling asyn await
 import 'regenerator-runtime/runtime';
 
-// API: https://forkify-api.herokuapp.com/v2
-
-// if (module.hot) {
-//   module.hot.accept();
-// }
-
 ///////////////////////////////////////
 
 const controlRecipe = async function () {
@@ -128,14 +122,9 @@ const controlAddRecipe = async function (addRecipe) {
     }, CLOSE_WINDOW_SEC * 1000);
   } catch (err) {
     addRecipeView.renderError(err);
-    console.log(err);
   }
   // Reload the ADD RECIPE FIELD again
   // location.reload();
-};
-
-const newFeature = function () {
-  console.log('Welcome to the coding');
 };
 
 const init = function () {
@@ -146,7 +135,6 @@ const init = function () {
   paginationView.addHandlerClick(controlPagination);
   searchView.addHandlerSearch(controlSearchResults);
   addRecipeView.addHandlerUpload(controlAddRecipe);
-  newFeature();
 };
 init();
 
