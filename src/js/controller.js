@@ -140,3 +140,5 @@ init();
 
 // window.addEventListener('hashchange', controlRecipe);
 // window.addEventListener('load', controlRecipe);
+
+console.log('TEST');
